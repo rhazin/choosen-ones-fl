@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='dark:bg-slate-800 dark:text-slate-50' >
+      <header className="flex items-center py-4 justify-center w-5/6">
+        <img src="images/choosen-ones-logo.png" alt="" className='mr-auto' />
+        <nav>
+          <ul className='flex font-bold '>
+            <li className='mx-4'>HOME</li>
+            <li className='mx-4'>UTILITY</li>
+            <li className='mx-4'>ROADMAP</li>
+            <li className='mx-4'>TEAM</li>
+            <li className='mx-4'>ABOUT</li>
+          </ul>
+        </nav>
       </header>
+      <Home></Home>
     </div>
   );
 }
