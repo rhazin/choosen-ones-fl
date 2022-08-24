@@ -3,7 +3,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div className='dark:bg-slate-800 dark:text-slate-50' >
+    <div className='dark:bg-slate-800 dark:text-slate-50 min-h-screen' >
       <header className="flex items-center py-4 justify-center w-5/6">
         <img src="images/choosen-ones-logo.png" alt="" className='mr-auto' />
         <nav>
