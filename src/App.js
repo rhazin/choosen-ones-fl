@@ -3,25 +3,15 @@ import Home from './components/Home';
 
 import Header from './components/Header';
 
-import { BrowserRouter, Routes, Route, } from 'react-router-dom';
-import Utility from './components/Utility';
-import RoadMap from './components/RoadMap';
-import Team from './components/Team';
-import About from './components/About';
-
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import AnimatedRoutes from './components/AnimatedRoutes'
 
 function App() {
+
   return (<>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<Home />} />
-          <Route path='utility' element={<Utility />} />
-          <Route path='roadmap' element={<RoadMap />} />
-          <Route path='team' element={<Team />} />
-          <Route path='about' element={<About />} />
-        </Route>
-      </Routes>
+
+      <AnimatedRoutes />
     </BrowserRouter>
   </>
   );

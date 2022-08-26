@@ -1,9 +1,10 @@
 
+import { motion } from 'framer-motion';
 
 function Utility() {
-    return <div>
+    return <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         UTILITY
-    </div >
+    </motion.div >
 }
 
 export default Utility;
