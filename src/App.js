@@ -1,23 +1,29 @@
 import './App.css';
 import Home from './components/Home';
 
+import Header from './components/Header';
+
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import Utility from './components/Utility';
+import RoadMap from './components/RoadMap';
+import Team from './components/Team';
+import About from './components/About';
+
+
 function App() {
-  return (
-    <div className='dark:bg-slate-800 dark:text-slate-50 min-h-screen' >
-      <header className="flex items-center py-4 justify-center w-5/6">
-        <img src="images/choosen-ones-logo.png" alt="" className='mr-auto' />
-        <nav>
-          <ul className='flex font-bold '>
-            <li className='mx-4'>HOME</li>
-            <li className='mx-4'>UTILITY</li>
-            <li className='mx-4'>ROADMAP</li>
-            <li className='mx-4'>TEAM</li>
-            <li className='mx-4'>ABOUT</li>
-          </ul>
-        </nav>
-      </header>
-      <Home></Home>
-    </div>
+  return (<>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Header />}>
+          <Route index element={<Home />} />
+          <Route path='utility' element={<Utility />} />
+          <Route path='roadmap' element={<RoadMap />} />
+          <Route path='team' element={<Team />} />
+          <Route path='about' element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </>
   );
 }
 
