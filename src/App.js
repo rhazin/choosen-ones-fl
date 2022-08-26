@@ -3,7 +3,7 @@ import Home from './components/Home';
 
 import Header from './components/Header';
 
-import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import Utility from './components/Utility';
 import RoadMap from './components/RoadMap';
 import Team from './components/Team';
