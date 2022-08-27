@@ -70,17 +70,17 @@ function Utility() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="md:w-5/6 md:flex md:flex-col md:mx-auto md:mt-10">
+      <div className="w-5/6 md:flex md:flex-col mx-auto md:mt-10">
         <div className="flex flex-col">
-          <h1 className="text-7xl">UTILITY</h1>
-          <p className="text-2xl pt-6 pb-6">
+          <h1 className="text-5xl md:text-7xl">UTILITY</h1>
+          <p className="md:text-2xl pt-6 pb-6">
             We took the time to curate a specific set of utility items to
             benefit our community in a multifaceted way.
           </p>
         </div>
         <div className="flex flex-wrap">
           {utilityCards.map((card) => (
-            <div className="relative  my-8 mr-auto border-stone-50 border-2 flex-col flex w-[430px]">
+            <div className="relative  my-8 mr-24 border-stone-50 border-2 flex-col flex w-[430px]">
               <img src={card.imgSrc} alt="" width={430} />
               <div className="flex w-full  pb-4 absolute bottom-0 pl-2 backdrop-blur-xl">
                 <div className="flex flex-col">
@@ -97,7 +97,7 @@ function Utility() {
                   </table>
                 </div>
 
-                <h1 className="text-7xl font-bold ml-auto mr-1">
+                <h1 className="text-3xl md:text-7xl font-bold ml-auto mr-1">
                   {card.number}
                 </h1>
               </div>
