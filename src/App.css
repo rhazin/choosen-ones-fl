@@ -5,3 +5,7 @@
 .parent:hover .child {
     width: 40px;
 }
+
+body {
+    height: 95vh
+}
