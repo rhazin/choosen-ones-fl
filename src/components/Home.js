@@ -25,11 +25,11 @@ function Home() {
       exit={{ opacity: 0 }}
     >
       <div className="justify-around absolute bottom-0 w-full flex ">
-        <div className="contents">
+        <div className="relative">
           <svg
-            className="scale-50 md:scale-100 md:bottom-0 top-16  md:top-1/4 md:block  fixed "
-            width="800"
-            height="800"
+            className="bottom-0 md:block  absolute w-screen md:w-auto "
+            width={Math.min(visualViewport.height, visualViewport.width) - 80}
+            height={Math.min(visualViewport.height, visualViewport.width) - 80}
             viewBox="0 0 707 707"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -80,6 +80,7 @@ function Home() {
           <img
             className="z-10 relative"
             src="images/home/choosen-ones-home.png"
+            width={visualViewport.height - 100}
             alt=""
           />
         </div>

@@ -141,8 +141,8 @@ function RoadMap() {
               <img
                 src={card.imgsrc}
                 alt=""
-                width={600}
-                className="pr-4 md:p-0 "
+                width={368}
+                className="pr-4 md:p-0 max-h-[450px] my-auto mx-auto"
               />
             </div>
           ))}
