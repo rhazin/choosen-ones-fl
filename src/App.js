@@ -1,19 +1,15 @@
-import './App.css';
-import Home from './components/Home';
+import "./App.css";
 
-import Header from './components/Header';
-
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import AnimatedRoutes from './components/AnimatedRoutes'
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
-
-  return (<>
-    <BrowserRouter>
-
-      <AnimatedRoutes />
-    </BrowserRouter>
-  </>
+  return (
+    <>
+      <BrowserRouter>
+        <AnimatedRoutes />
+      </BrowserRouter>
+    </>
   );
 }
 
