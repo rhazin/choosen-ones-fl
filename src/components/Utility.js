@@ -80,7 +80,7 @@ function Utility() {
         </div>
         <div className="flex flex-wrap">
           {utilityCards.map((card) => (
-            <div className="relative  my-8 mr-24 border-stone-50 border-2 flex-col flex w-[430px]">
+            <div className="relative  my-8 mr-auto border-stone-50 border-2 flex-col flex w-[430px]">
               <img src={card.imgSrc} alt="" width={430} />
               <div className="flex w-full  pb-4 absolute bottom-0 pl-2 backdrop-blur-xl">
                 <div className="flex flex-col">
