@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <div className="dark:bg-black  dark:text-slate-50 min-h-screen bg-[url('http://localhost:3000/images/co-bg.png')]">
-      <header className="flex py-4 md:flex md:items-center  md:justify-center md:w-5/6 md:pt-8">
+      <header className="flex py-4  md:items-center  md:w-5/6 md:pt-8">
         <button
           className="px-8 md:hidden"
           onClick={() => {
@@ -21,10 +21,14 @@ function Header() {
           ⇉
         </button>
         <img
-          src="images/choosen-ones-logo.png"
+          src={
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? `images/choosen-ones-dark-logo.png`
+              : `images/choosen-ones-logo.png`
+          }
           alt="Choosen ones logo"
           width={visualViewport.width < 700 ? 200 : 300}
-          className=""
+          className="md:ml-"
         />
         <nav className="hidden md:block">
           <ul className="flex font-semibold text-2xl">
